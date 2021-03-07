@@ -19,6 +19,7 @@ export default function Search(event) {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description
     });
+    
   }
   function handleSubmit(event) {
     event.preventDefault();
