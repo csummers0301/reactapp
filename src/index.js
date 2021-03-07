@@ -33,7 +33,7 @@ function App() {
             </div>
       <div>
         </div>
-        <a href="https://github.com/csummers0301/weather-app-project">
+        <a href="https://github.com/csummers0301/testingreactapp">
           Open-source code{" "}
         </a>
         by Cristine Summers
