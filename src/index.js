@@ -11,6 +11,7 @@ function App() {
       <div className="wrapper">
         <div className="row">
           <div className="col">
+            <h5>What's the weather like in....</h5>
             <Search />
           </div>
           <div className="col">
