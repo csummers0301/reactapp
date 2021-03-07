@@ -19,7 +19,6 @@ function App() {
           <div className="col">
             <div className="col date">
               <Date />
-              <Icon />
             </div>
           </div>
         </div>
@@ -27,17 +26,18 @@ function App() {
           <div className="col city">
             <Weather />
           </div>
-          <div className="col">
+          <div className="col icon">
+            <Icon />
             </div>
-        </div>
-      </div>
+          </div>
+            </div>
       <div>
+        </div>
         <a href="https://github.com/csummers0301/weather-app-project">
           Open-source code{" "}
         </a>
         by Cristine Summers
       </div>
-    </div>
   );
 }
 
