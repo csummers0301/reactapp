@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import Search from "./Search";
 import Date from "./Date";
+import Image from "./Image";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -11,7 +12,7 @@ function App() {
       <div className="wrapper">
         <div className="row">
           <div className="col">
-            <Search city="New York" />
+            <Search />
           </div>
           <div className="col">
             <div className="col date">
@@ -23,7 +24,7 @@ function App() {
           <div className="col city">
           </div>
           <div className="col weather-image">
-            
+            <Image />
           </div>
         </div>
       </div>

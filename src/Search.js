@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Search.css";
 import "./App.css";
 
+
 export default function Search(event) {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState("");
@@ -27,6 +28,7 @@ export default function Search(event) {
   function updateCity(event) {
     setCity(event.target.value);
   }
+
   let form = (
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a city" onChange={updateCity} />
@@ -41,10 +43,11 @@ export default function Search(event) {
         <br />
 
         {form}
+        
         <h1>{city}</h1>
           <h4>{Math.round(weather.temperature)}°F</h4>
           <ul>
-            <li>Description: {weather.description}</li>
+            <li>{weather.description}</li>
           <li>Humidity: {Math.round(weather.humidity)}%</li>
           <li>Wind: {Math.round(weather.wind)}mph</li>
           <li>
@@ -57,4 +60,3 @@ export default function Search(event) {
     return form;
   }
 }
-
