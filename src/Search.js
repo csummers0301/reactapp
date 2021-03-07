@@ -30,6 +30,7 @@ export default function Search(event) {
   }
 
   let form = (
+    
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a city" onChange={updateCity} />
       <button type="submit"className= "Button">Search</button>
@@ -38,21 +39,21 @@ export default function Search(event) {
 
   if (loaded) {
     return (
-      
-      <div>
-        <br />
-
+  <div>
         {form}
         
         <h1>{city}</h1>
+        <ul>
+        <li>
+          <img src={weather.icon} alt={weather.description} />
+          </li>
+          </ul>
           <h4>{Math.round(weather.temperature)}°F</h4>
           <ul>
             <li>{weather.description}</li>
           <li>Humidity: {Math.round(weather.humidity)}%</li>
           <li>Wind: {Math.round(weather.wind)}mph</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
+          
         </ul>
       </div>
     );

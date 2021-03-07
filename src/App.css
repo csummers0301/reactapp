@@ -27,6 +27,13 @@ h4 {
   font-family: "Quicksand", sans-serif;
   text-align: right;
 }
+h5 {
+  color: #f95509;
+  font-family: "Raleway", sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+  text-align: left;
+}
 
 ul {
   list-style: none;
@@ -57,6 +64,6 @@ a {
 }
 .icon img {
   width: 100%;
-  position: absolute;
+  position: right;
   top: -50%;
 }
