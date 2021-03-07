@@ -1,0 +1,19 @@
+.Search {
+  font-family: sans-serif;
+  text-align: float-left;
+  font-size: 16px;
+  line-height: 26px;
+}
+.Button {
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 0px #1495c4;
+  background: #1495c4;
+  color: white;
+  font-size: 16px;
+  line-height: 12px;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}

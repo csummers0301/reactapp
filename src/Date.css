@@ -1,0 +1,14 @@
+ul .Date {
+  list-style-type: none;
+  color: #a1a4aa;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  text-align: right;
+}
+ul .Time {
+  list-style-type: none;
+  color: darkgrey;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  text-align: right;
+}

@@ -1,5 +1,5 @@
 import "./styles.css";
-import Search from "./Search";
+import Search from "./src/Search";
 
 export default function App() {
   return (

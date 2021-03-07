@@ -1,11 +1,62 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+body {
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  color: white;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
 }
+
+h1 {
+  margin-top: 100px;
+  font-size: 48px;
+  color: #fbc00a;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-align: right;
+  text-transform: capitalize;
+}
+h2 {
+  margin-top: 0px;
+  color: #767983;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+h4 {
+  color: #f95509;
+  font-family: "Quicksand", sans-serif;
+  text-align: right;
+}
+
 ul {
   list-style: none;
-  font-family: "Raleway";
+  text-align: right;
 }
-body {
-  background-color: #d1e5f0;
+a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: white;
+  border: 1px solid #a1a4aa;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+  color: #a1a4aa;
+}
+
+.humidity,
+.wind {
+  color: #a1a4aa;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+.icon img {
+  width: 100%;
+  position: absolute;
+  top: -50%;
 }
