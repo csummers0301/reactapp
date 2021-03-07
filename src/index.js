@@ -5,6 +5,7 @@ import Date from "./Date";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.css';
 
+
 function App() {
   return (
     <div className="App">
@@ -12,12 +13,12 @@ function App() {
         <div className="row">
           <div className="col">
             <h5>What's the weather like in....</h5>
-            <Search />
+            <Search city="New York"/>
           </div>
           <div className="col">
             <div className="col date">
               <Date />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7VGzOV6_po63PLOs3Ar3bMcpPAlU0M4jKQ&usqp=CAU" alt="hiking" />
+              <img src= "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goodfreephotos.com%2Fother-landscapes%2Fwaterfall-in-nature.jpg.php&psig=AOvVaw3oHoyMTZck6obU_Y3BK3us&ust=1615240666675000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjzlsOWn-8CFQAAAAAdAAAAABAP" alt="hiking" />
             </div>
           </div>
         </div>
