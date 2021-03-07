@@ -24,7 +24,7 @@ function App() {
           <div className="col city">
           </div>
           <div className="col weather-image">
-    
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7VGzOV6_po63PLOs3Ar3bMcpPAlU0M4jKQ&usqp=CAU" alt="hiking" />
           </div>
         </div>
       </div>
