@@ -17,15 +17,15 @@ function App() {
           <div className="col">
             <div className="col date">
               <Date />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7VGzOV6_po63PLOs3Ar3bMcpPAlU0M4jKQ&usqp=CAU" alt="hiking" />
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col city">
           </div>
-          <div className="col weather-image">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7VGzOV6_po63PLOs3Ar3bMcpPAlU0M4jKQ&usqp=CAU" alt="hiking" />
-          </div>
+          <div className="col">
+            </div>
         </div>
       </div>
       <div>

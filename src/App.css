@@ -62,8 +62,13 @@ a {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
-.icon img {
+.icon {
   width: 100%;
   position: right;
-  top: -50%;
+  top: 0%;
+}
+.hiking {
+  width: 100%;
+  position: fixed, top;
+  margin-top: 0%;
 }
