@@ -17,7 +17,6 @@ function handleResponse(response){
     wind: response.data.wind.speed,
     humidity:response.data.main.humidity,
     icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      
   });
 }
   if(weatherInfo.ready){
@@ -49,7 +48,11 @@ function handleResponse(response){
     </div>
           </div>
           <div className="col icon">
-            <Icon />
+             <img
+      className="Icon"
+      src= {weatherInfo.icon}
+      alt={weatherInfo.description}
+    />
             </div>
           </div>
           </div>

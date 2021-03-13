@@ -30,3 +30,6 @@ li {
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
+Icon {
+  max-width: 100px;
+}
