@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 import "./Weather.css";
-import Date from "./Date";
+import CurrentDate from "./CurrentDate";
 import axios from "axios";
 
 
@@ -12,6 +12,7 @@ function handleResponse(response){
   setWeatherInfo({
     ready: true,
     city:response.data.name,
+    date:new Date(response.data.dt*1000),
     description: response.data.weather[0].description,
     temperature:response.data.main.temp,
     wind: response.data.wind.speed,
@@ -31,7 +32,7 @@ function handleResponse(response){
           </div>
           <div className="col">
             <div className="col date">
-              <Date />
+              <CurrentDate date={weatherInfo.date}/>
             </div>
           </div>
         </div>
@@ -41,7 +42,7 @@ function handleResponse(response){
      <h1 className="City">{weatherInfo.city}</h1>;
     <ul>
       <li className="Temperature">{Math.round(weatherInfo.temperature)}{""} F | C</li>
-      <li className="Description"className="text-capitalize">{weatherInfo.description}</li>
+      <li className="text-capitalize">{weatherInfo.description}</li>
       <li className="Humidity">Humidity: {weatherInfo.humidity}%</li>
       <li className="Wind Speed">Wind Speed: {Math.round(weatherInfo.wind)}{""} mph</li>
     </ul>
