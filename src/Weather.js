@@ -4,7 +4,7 @@ import Date from "./Date";
 import axios from "axios";
 import Icon from "./Icon";
 
-export default function Weather() {
+export default function Weather(props) {
   const[weatherInfo, setWeatherInfo]=useState({ ready:false})
   ;
 function handleResponse(response){
@@ -16,6 +16,8 @@ function handleResponse(response){
     temperature:response.data.main.temp,
     wind: response.data.wind.speed,
     humidity:response.data.main.humidity,
+    icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      
   });
 }
   if(weatherInfo.ready){
@@ -55,8 +57,7 @@ function handleResponse(response){
   );
 }else{
   const apiKey=`9613899aeff6104a2852d1a6d28e49cf`;
-  let city= "New York";
-  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(handleResponse);
   return "Loading";
 }
