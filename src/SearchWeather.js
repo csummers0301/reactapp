@@ -1,10 +1,11 @@
 import React,{ useState } from "react";
 import "./Weather.css";
+import WeatherData from "./WeatherData";
 import CurrentDate from "./CurrentDate";
 import axios from "axios";
 
 
-export default function Weather(props) {
+export default function SearchWeather(props) {
   const[weatherInfo, setWeatherInfo]=useState({ ready:false})
   ;
 function handleResponse(response){
@@ -22,42 +23,28 @@ function handleResponse(response){
 }
   if(weatherInfo.ready){
     return(
-    <div className="Weather">
+    <div className="SearchWeather">
      <div className="row">
           <div className="col">
       <form className="City Search">
       <input type="text" placeholder="Enter a city" autoFocus="off" />
       <input type="submit" value="Search" className="Button" />
     </form>
-          </div>
-          <div className="col">
+    </div>
+    <div>
+       <div className="col">
             <div className="col date">
               <CurrentDate date={weatherInfo.date}/>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col city">
-            <div>
-     <h1 className="City">{weatherInfo.city}</h1>;
-    <ul>
-      <li className="Temperature">{Math.round(weatherInfo.temperature)}{""} F | C</li>
-      <li className="text-capitalize">{weatherInfo.description}</li>
-      <li className="Humidity">Humidity: {weatherInfo.humidity}%</li>
-      <li className="Wind Speed">Wind Speed: {Math.round(weatherInfo.wind)}{""} mph</li>
-    </ul>
     </div>
-          </div>
-          <div className="col icon">
-             <img
-      className="Icon"
-      src= {weatherInfo.icon}
-      alt={weatherInfo.description}
-    />
-            </div>
-          </div>
-          </div>
-      
+    <div>
+       <WeatherData info={weatherInfo}/>
+    </div>
+      </div>
+    
+        
   );
 }else{
   const apiKey=`9613899aeff6104a2852d1a6d28e49cf`;
