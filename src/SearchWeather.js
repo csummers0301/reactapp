@@ -6,8 +6,8 @@ import axios from "axios";
 
 
 export default function SearchWeather(props) {
-  const[weatherInfo, setWeatherInfo]=useState({ ready:false})
-  ;
+  const[weatherInfo, setWeatherInfo]=useState({ ready:false});
+  const[city,setCity]=useState(props.defaultCity);
 function handleResponse(response){
   console.log(response.data);
   setWeatherInfo({
@@ -21,13 +21,27 @@ function handleResponse(response){
     icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
   });
 }
+function search(){
+  const apiKey=`9613899aeff6104a2852d1a6d28e49cf`;
+  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(handleResponse);
+
+}
+function handleSubmit(event){
+  event.preventDefault();
+  search();
+}
+function updateCity(event){
+  setCity(event.target.value);
+
+}
   if(weatherInfo.ready){
     return(
     <div className="SearchWeather">
      <div className="row">
           <div className="col">
-      <form className="City Search">
-      <input type="text" placeholder="Enter a city" autoFocus="off" />
+      <form className="City Search" onSubmit={handleSubmit}>
+      <input type="text" placeholder="Enter a city" autoFocus="on" onChange={updateCity}/>
       <input type="submit" value="Search" className="Button" />
     </form>
     </div>
@@ -47,9 +61,7 @@ function handleResponse(response){
         
   );
 }else{
-  const apiKey=`9613899aeff6104a2852d1a6d28e49cf`;
-  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(handleResponse);
+  search()
   return "Loading";
 }
 }

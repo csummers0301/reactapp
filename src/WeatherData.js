@@ -7,7 +7,7 @@ export default function WeatherData(props) {
         <div className="row">
           <div className="col city">
             <div>
-     <h1 className="City">{props.info.city}</h1>;
+     <h1 className="City">{props.info.city}</h1>
     <ul>
       <li className="Temperature">{Math.round(props.info.temperature)}{""} F | C</li>
       <li className="text-capitalize">{props.info.description}</li>
@@ -25,8 +25,6 @@ export default function WeatherData(props) {
       </div>
       </div>
       </div>
-    
-      
   );
 }
 
