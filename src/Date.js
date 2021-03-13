@@ -8,4 +8,4 @@ export default function Date() {
       <li className="Time">10:00</li>
     </ul>
   );
-}
+  }
