@@ -27,21 +27,20 @@ h4 {
   font-family: "Quicksand", sans-serif;
   text-align: right;
 }
-h5 {
-  color: #f95509;
-  font-family: "Raleway", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: left;
-}
 
 ul {
   list-style: none;
   text-align: right;
 }
+
 a {
   color: lightgrey;
   text-decoration: none;
+}
+li {
+  list-style-type: none;
+  text-align: right;
+  font-family: "Quicksand", sans-serif;
 }
 
 .wrapper {
@@ -61,14 +60,4 @@ a {
   color: #a1a4aa;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-}
-.icon {
-  width: 100%;
-  position: right;
-  top: 0%;
-}
-.hiking {
-  width: 100%;
-  position: fixed, right;
-  margin-top: 0%;
 }
