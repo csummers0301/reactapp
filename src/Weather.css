@@ -4,7 +4,7 @@ ul .Temperature {
   color: #f95509;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 48px;
 }
 li {
   list-style-type: none;
@@ -30,6 +30,6 @@ li {
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
-Icon {
+.Icon {
   max-width: 100px;
 }

@@ -1,5 +1,6 @@
 import "./Search.css";
 import React from "react";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherData(props) {
   return (
@@ -8,8 +9,9 @@ export default function WeatherData(props) {
           <div className="col city">
             <div>
      <h1 className="City">{props.info.city}</h1>
+      
     <ul>
-      <li className="Temperature">{Math.round(props.info.temperature)}{""} F | C</li>
+      <WeatherTemperature fahrenheit={props.info.temperature} />
       <li className="text-capitalize">{props.info.description}</li>
       <li className="Humidity">Humidity: {props.info.humidity}%</li>
       <li className="Wind Speed">Wind Speed: {Math.round(props.info.wind)}{""} mph</li>
