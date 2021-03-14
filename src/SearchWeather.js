@@ -64,7 +64,6 @@ function updateCity(event){
     </div>
       </div>
     
-        
   );
 }else{
   search()
