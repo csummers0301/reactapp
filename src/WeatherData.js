@@ -14,7 +14,7 @@ export default function WeatherData(props) {
        <WeatherTemperature fahrenheit={props.info.temperature} />
       <li className="Description text-capitalize">{props.info.description}</li>
       <li className="Humidity">Humidity: {props.info.humidity}%</li>
-      <li className="Wind Speed">Wind Speed: {Math.round(props.info.wind)}{""} mph</li>
+      <li className="Wind Speed">Wind: {Math.round(props.info.wind)}{""} mph</li>
     </ul>
     </div>
           </div>
