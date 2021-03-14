@@ -26,6 +26,9 @@ export default function WeatherData(props) {
     />
       </div>
       </div>
+      <div>
+        
+      </div>
       </div>
   );
 }

@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import "./Weather.css";
 import WeatherData from "./WeatherData";
+import WeatherForecast from "./WeatherForecast";
 import CurrentDate from "./CurrentDate";
 import axios from "axios";
 
@@ -54,7 +55,12 @@ function updateCity(event){
         </div>
     </div>
     <div>
-       <WeatherData info={weatherInfo}/>
+       <WeatherData info={weatherInfo}/> 
+       <hr />
+      <WeatherForecast city={weatherInfo.city}/>
+    </div>
+    <div>
+     
     </div>
       </div>
     

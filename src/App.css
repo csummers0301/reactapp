@@ -57,10 +57,3 @@ img {
   max-width: 700px;
   color: #a1a4aa;
 }
-
-.humidity,
-.wind {
-  color: #a1a4aa;
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-}

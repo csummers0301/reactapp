@@ -1,0 +1,15 @@
+.WeatherForecast {
+  text-align: center;
+}
+.Time {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 700;
+  color: 767983;
+}
+.Temp {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 700;
+  color: #f95508;
+}
