@@ -13,7 +13,7 @@ function App() {
         <SearchWeather defaultCity="New York"/>
         </div>
         <footer>
-        <a href="https://github.com/csummers0301/testingreactapp">
+        <a href="https://github.com/csummers0301/reactapp">
           Open-source code{" "}
         </a>
         by Cristine Summers
